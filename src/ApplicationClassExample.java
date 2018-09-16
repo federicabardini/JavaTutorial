@@ -11,6 +11,26 @@ class Cats {
     void meow() {
         System.out.println("This cat's name is " + name + " and it is " + color + " and it is " + age + " years old.");
     }
+
+    //define a method with a return value
+    int getMyHumanAge() {
+        int humanAge = age*2;
+
+        return humanAge;
+    }
+
+    //define getters
+    int getAge() {
+        return age;
+    }
+
+    String getName() {
+        return name;
+    }
+
+    String getColor() {
+        return color;
+    }
 }
 
 
@@ -70,17 +90,13 @@ public class ApplicationClassExample {
 
         switch (newLine) {
             case "Cats":
-                //System.out.println(kitty.name);
-                //System.out.println(kitty.age);
-                //System.out.println(kitty.color);
-                kitty.meow();
+                //kitty.meow();
+                int humAge = kitty.getMyHumanAge();
+                int catAge = kitty.getAge();
+                System.out.println("My human age is " + humAge + " but my real age is " + catAge);
             break;
 
             case "People":
-                //System.out.println(misterX.name);
-                //System.out.println(misterX.age);
-                //System.out.println(misterX.haircolor);
-                //System.out.println(misterX.occupation);
                 misterX.tellMeSomethingAboutYou();
             break;
             default:
