@@ -6,6 +6,11 @@ class Cats {
     String name;
     String color;
     int age;
+
+    //define a new method
+    void meow() {
+        System.out.println("This cat's name is " + name + " and it is " + color + " and it is " + age + " years old.");
+    }
 }
 
 
@@ -16,6 +21,9 @@ class People {
     String occupation;
     String haircolor;
 
+    void tellMeSomethingAboutYou() {
+        System.out.println("My name is " + name + " and my hair are " + haircolor + ". \nI'm " + age + " years old and I'm a " + occupation);
+    }
 }
 
 
@@ -62,16 +70,18 @@ public class ApplicationClassExample {
 
         switch (newLine) {
             case "Cats":
-                System.out.println(kitty.name);
-                System.out.println(kitty.age);
-                System.out.println(kitty.color);
+                //System.out.println(kitty.name);
+                //System.out.println(kitty.age);
+                //System.out.println(kitty.color);
+                kitty.meow();
             break;
 
             case "People":
-                System.out.println(misterX.name);
-                System.out.println(misterX.age);
-                System.out.println(misterX.haircolor);
-                System.out.println(misterX.occupation);
+                //System.out.println(misterX.name);
+                //System.out.println(misterX.age);
+                //System.out.println(misterX.haircolor);
+                //System.out.println(misterX.occupation);
+                misterX.tellMeSomethingAboutYou();
             break;
             default:
                 System.out.println("You have inserted an unknown option: please choose between 'Cats' or 'People'");
