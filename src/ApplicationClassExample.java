@@ -6,6 +6,8 @@ class Cats {
     private String name;
     private String color;
     private int age;
+    //Definition of class variables
+    private static String animalType;
 
     //adding constructor methods
     public Cats() {
@@ -27,7 +29,8 @@ class Cats {
 
     //define a new method
     void meow() {
-        System.out.println("This cat's name is " + name + " and it is " + color + " and it is " + age + " years old.");
+        Cats.animalType = "Feline";
+        System.out.println("This cat's name is " + name + " and it is " + color + " and it is " + age + " years old. This cat is a " + animalType);
     }
 
     //define a method with a return value
