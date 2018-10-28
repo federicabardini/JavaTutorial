@@ -1,4 +1,4 @@
-package Exercism.two.fer;
+package exercismtwofer;
 
 public class TwoFer {
 
